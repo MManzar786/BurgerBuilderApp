@@ -7,7 +7,11 @@ import Button from "../../UI/Button/Button";
 const Toolbar = (props) => {
   return (
     <header className={classes.Toolbar}>
-      <Button clicked={props.open}>Menu</Button>
+      <Button clicked={props.open}>
+        <div className={classes.Line}></div>
+        <div className={classes.Line}></div>
+        <div className={classes.Line}></div>
+      </Button>
       <div className={classes.Logo}>
         <Logo />
       </div>
